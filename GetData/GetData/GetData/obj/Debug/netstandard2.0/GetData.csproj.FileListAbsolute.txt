@@ -1,0 +1,7 @@
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\bin\Debug\netstandard2.0\GetData.deps.json
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\bin\Debug\netstandard2.0\GetData.dll
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\obj\Debug\netstandard2.0\GetData.csprojAssemblyReference.cache
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\obj\Debug\netstandard2.0\GetData.AssemblyInfoInputs.cache
+D:\XamarinProjects\HSE msp\GetData\GetData\GetData\obj\Debug\netstandard2.0\GetData.AssemblyInfo.cs
