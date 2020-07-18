@@ -1,0 +1,15 @@
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.exe
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.csprojAssemblyReference.cache
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.AssemblyInfoInputs.cache
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.AssemblyInfo.cs
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.csproj.CopyComplete
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.deps.json
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.runtimeconfig.json
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.runtimeconfig.dev.json
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.dll
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\bin\Debug\netcoreapp3.1\GetDataFun.pdb
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.csproj.CoreCompileInputs.cache
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.dll
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.pdb
+D:\XamarinProjects\HSE msp\GetDataFun\GetDataFun\obj\Debug\netcoreapp3.1\GetDataFun.genruntimeconfig.cache
