@@ -18,14 +18,25 @@ namespace App1
         public MainPage()
         {
             InitializeComponent();
-            var map = new Map(MapSpan.FromCenterAndRadius(new Position(37, -122), Distance.FromMiles(10)));
-            var pin = new Pin()
-            {
-                Position = new Position(37, -122),
-                Label = "Some Pin!"
-            };
-            map.Pins.Add(pin);
+            var map = new Map(MapSpan.FromCenterAndRadius(new Position(55.755787, 37.617634), Distance.FromMiles(10))); //можно задать местоположение человека, допилим потом
+            int numberOfBuidings = 1;
             Content = map;
+            double x = 55.702845;
+            double y = 37.530651;
+            string name = "Moscow State University";
+            for (int i = 0; i < numberOfBuidings; i++)
+            {
+                var pin = new Pin()
+                {
+                    //x = - здесь ConnectionWithDataBase должен передать x, y и название места
+                    //y = 
+                    //name = 
+                    Position = new Position(x, y),
+                    Label = name 
+                };
+                //map.IsShowingUser = true;       
+                map.Pins.Add(pin);
+            }
         }
             
         
