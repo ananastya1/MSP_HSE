@@ -38,8 +38,6 @@ namespace App1
                 map.Pins.Add(pin);
             }
         }
-            
-        
     }
 
 }
