@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
+
 
 namespace App1
 {
@@ -16,6 +18,17 @@ namespace App1
         public MainPage()
         {
             InitializeComponent();
+            var map = new Map(MapSpan.FromCenterAndRadius(new Position(37, -122), Distance.FromMiles(10)));
+            var pin = new Pin()
+            {
+                Position = new Position(37, -122),
+                Label = "Some Pin!"
+            };
+            map.Pins.Add(pin);
+            Content = map;
         }
+            
+        
     }
+
 }
