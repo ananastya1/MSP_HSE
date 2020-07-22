@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ASHTtux09m98niPRcJsHOkOQalUAaTREKfiJoa7cdEsXKVYErZEv40NOzRt+8En4TVRCp4s0VvVG/L1Cshe9lQ==",
+  "dgSpecHash": "H6OOvQdRhiqci5KQ6/w9EXTorgUpXFM+a+86gcggpx3BsXLes81nz36/8B9nv1or1rORCncZ2oit2fB6KOqYdQ==",
   "success": true,
   "projectFilePath": "D:\\4\\MSP_HSE\\App1\\App1\\App1\\App1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rekni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rekni\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\rekni\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\rekni\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\rekni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\rekni\\.nuget\\packages\\xamarin.forms\\4.7.0.1142\\xamarin.forms.4.7.0.1142.nupkg.sha512",

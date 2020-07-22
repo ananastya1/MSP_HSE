@@ -533,3 +533,4 @@ D:\4\MSP_HSE\App1\App1\App1.Android\obj\Debug\90\android\src\mono\com\google\and
 D:\4\MSP_HSE\App1\App1\App1.Android\obj\Debug\90\android\src\mono\com\google\android\gms\tasks\OnFailureListenerImplementor.java
 D:\4\MSP_HSE\App1\App1\App1.Android\obj\Debug\90\android\src\mono\com\google\android\gms\tasks\OnSuccessListenerImplementor.java
 D:\4\MSP_HSE\App1\App1\App1.Android\obj\Debug\90\android\src\mono\com\google\android\gms\tasks\OnTokenCanceledListenerImplementor.java
+D:\4\MSP_HSE\App1\App1\App1.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
