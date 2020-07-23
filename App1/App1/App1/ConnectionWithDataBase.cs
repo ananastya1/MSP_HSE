@@ -43,6 +43,11 @@ namespace App1
         public double y { get; set; }
         public string name { get; set; }
         //public string author { get; set; }
+        public ConnectionWithDataBase()
+        {
+
+        }
+
         public ConnectionWithDataBase(int i, double X, double Y, string Name, string Type, string img/*, string auth*/)
         {
             index = i;

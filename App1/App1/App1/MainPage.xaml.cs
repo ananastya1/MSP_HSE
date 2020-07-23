@@ -15,28 +15,47 @@ using Xamarin.Forms.Shapes;
 
 namespace App1
 {
-    
+    public class Obj
+    {
+        public Pin pin { get; set; }
+        public string s { get; set; }
+
+        public string image { get; set; }
+        public Obj()
+        {
+
+        }
+        public Obj(string S, Pin Pin, string img)
+        {
+            pin = Pin;
+            s = S;
+            image = img;
+        }
+    }
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
-    {   
+    {
+        public event EventHandler GetGeo;
+        private double[] coordinate = new double[2];
+        private List<Pin> pins = new List<Pin>();
         public MainPage()
         {
+            GetGeo += MainPage_GetGeo;
+            GetGeo?.Invoke(this, EventArgs.Empty);
             InitializeComponent();
-            //var res = await GeoAsync();
-            var map = new Xamarin.Forms.Maps.Map(MapSpan.FromCenterAndRadius(new Position(55.755787, 37.617634), Distance.FromMiles(1))); //можно задать местоположение человека, допилим потом
-            
+            // var res = await GeoAsync();
+            var map = new Xamarin.Forms.Maps.Map(MapSpan.FromCenterAndRadius(new Position(coordinate[0], coordinate[1]), Distance.FromMiles(1))); //можно задать местоположение человека, допилим потом
             Content = map;
-            //string jsonString = File.ReadAllText(@"D:\1\data.json");
             string jsonString = FileReader();
-            string s = jsonString;
             var data = JsonConvert.DeserializeObject<Data>(jsonString);
             List<ConnectionWithDataBase> connection = data.Parse();
             double x = 55.702845;
             double y = 37.530651;
             string name = "Moscow State University";
             int numberOfBuidings = (int)data.count;
+            map.IsShowingUser = true;
             foreach (ConnectionWithDataBase db in connection)
             {
                 x = db.x;
@@ -45,12 +64,47 @@ namespace App1
                 var pin = new Pin()
                 {
                     Position = new Position(x, y),
-                    Label = name 
+                    Label = name,
                 };
-                map.IsShowingUser = true;       
+                pins.Add(pin);
+                pin.MarkerClicked += Pin_MarkerClicked;
                 map.Pins.Add(pin);
             }
         }
+        public ConnectionWithDataBase Search(Pin pin)
+        {
+            string jsonString = FileReader(); 
+            var data = JsonConvert.DeserializeObject<Data>(jsonString);
+            List<ConnectionWithDataBase> connection = data.Parse();
+            Position position = pin.Position;
+            ConnectionWithDataBase result = new ConnectionWithDataBase();
+            foreach (ConnectionWithDataBase db in connection)
+            {
+                if (db.x == position.Latitude)
+                {
+                    result = db;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        private async void Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        {
+            Pin buf = sender as Pin;
+            ConnectionWithDataBase db = Search(buf);
+            string s = $"https://archi.ru/projects/world/{db.index}";
+            Obj obj1 = new Obj(s, buf, db.image);
+            DetailPage detailPage = new DetailPage(obj1);
+            //detailPage.BindingContext = obj1;
+            await Navigation.PushModalAsync(detailPage);
+        }
+
+        private async void MainPage_GetGeo(object sender, EventArgs e)
+        {
+            coordinate = await GeoAsync();
+        }
+
         public string FileReader()
         {
             string jsonName = "Connection.json";
@@ -58,9 +112,7 @@ namespace App1
             Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{jsonName}");
             var reader = new System.IO.StreamReader(stream);
             var jsonString = reader.ReadToEnd();
-            //Converting JSON Array Objects into generic list    
-            //ObjContactList = JsonConvert.DeserializeObject<ContactList>(jsonString);
-             return jsonString;
+            return jsonString;
         }
         public async Task<double[]> GeoAsync()
         {
