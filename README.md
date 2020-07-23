@@ -9,4 +9,4 @@
 Состоит из трех частей:
 1) База данных, представлена json-файлом (MSP_HSE/App1/App1/App1/Connection.json)
 2) Back-end, представлен, в основном, кодом для работы с базой данных (MSP_HSE/App1/App1/App1/ConnectionWithDataBase.cs). То есть front-end отправляет запрос в back и получает в ответ List объектов класса ConnectionWithDataBase, содержащий данные из БД
-3) Front-end, преобразовывающий в визуальную форму данные из back-end.
+3) Front-end, преобразовывающий в визуальную форму данные из back-end
